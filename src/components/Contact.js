@@ -23,11 +23,7 @@ const Hero = styled.div`
     }
     
     h1 {
-        font-size: 120px;
-
-        &:nth-of-type(1) {
-            font-size: 190px;
-        }
+        font-size: 240px;
     }
 
     @media(max-width: 1024px) {
@@ -53,7 +49,7 @@ const ContactSect = styled.div`
 `
 
 const ImageContact = styled.img`
-    width: 200px;
+    width: 240px;
     transition: all .3s ease-in-out;
     border-radius: 20%;
 

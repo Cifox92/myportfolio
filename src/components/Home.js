@@ -6,7 +6,7 @@ const ContainerHome = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-top: 98px;
+    margin-top: 100px;
     height: 92vh;
     align-items: center;
     background-image: url(${fotoDavid});
@@ -33,10 +33,10 @@ const Hero = styled.div`
     }
     
     h1 {
-        font-size: 150px;
+        font-size: 200px;
 
         &:nth-of-type(1) {
-            font-size: 200px;
+            font-size: 250px;
         }
     }
 
@@ -47,7 +47,7 @@ const Hero = styled.div`
             font-size: 100px;
 
             &:nth-of-type(1) {
-                font-size: 130px;
+                font-size: 120px;
             }
         }
     }

@@ -23,10 +23,10 @@ const Hero = styled.div`
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 120px;
 
         &:nth-of-type(1) {
-            font-size: 130px;
+            font-size: 180px;
         }
     }
 
@@ -48,8 +48,8 @@ const Description = styled.div`
     margin: 0 4rem;
 
     p {
-        font-size: 1.5rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 4rem;
         text-align: justify;
     }
 
@@ -70,13 +70,13 @@ const SkillsSection = styled.div`
 
 const Skill = styled.div`
     display: inline-block;
-    padding: 5px 15px;
+    padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
     background-color: var(--orange);
     color: white;
     transition: transform .3s;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
     &:hover {
         transform: scale(1.5);

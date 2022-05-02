@@ -27,6 +27,7 @@ const Layout = props => {
                     h2 {
                         font-family: 'Ubuntu', sans-serif;
                         font-weight: 700;
+                        font-size: 2.5rem;
                         letter-spacing: .5rem;
                         color: var(--orange);
                         margin: 0;

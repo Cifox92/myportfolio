@@ -24,11 +24,7 @@ const Hero = styled.div`
     }
     
     h1 {
-        font-size: 120px;
-
-        &:nth-of-type(1) {
-            font-size: 190px;
-        }
+        font-size: 240px;
     }
 
     @media(max-width: 1024px) {
@@ -36,10 +32,6 @@ const Hero = styled.div`
 
         h1 {
             font-size: 90px;
-
-            &:nth-of-type(1) {
-                font-size: 95px;
-            }
         }
     }
 `
@@ -48,8 +40,8 @@ const Description = styled.div`
     margin: 0 4rem;
 
     p {
-        font-size: 1.5rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 4rem;
         text-align: justify;
     }
 
@@ -67,7 +59,7 @@ const Mywork = () => {
             </Hero>
 
             <Description>
-                <p>Passionate about new tech & computing. I started my adventure in the Tech world studying the FullStack Web Development Bootcamp in Ironhack, which allowed me to continue this travel with the BMIND company, working as an implementations specialist of Analytics Engineering & Digital Marketing, being part of different proyects with clients like Mahou San Miguel, OrangeBank, Cosentino, Santander Bank & Barceló Hotel Group. I search to apply mu knowledge & passion to every project & phase of my life, with natural curiosity & sense of teamwork.</p>
+                <p>Passionate about new tech & computing. I started my adventure in the Tech world studying the FullStack Web Development Bootcamp in Ironhack, which allowed me to continue this travel with the BMIND company, working as an implementations specialist of Analytics Engineering & Digital Marketing, being part of different proyects with clients like Mahou San Miguel, OrangeBank, Cosentino, Santander Bank & Barceló Hotel Group. I search to apply my knowledge & passion to every project & phase of my life, with natural curiosity & sense of teamwork.</p>
             </Description>
         </ContainerWork>
     )

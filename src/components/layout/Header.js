@@ -132,7 +132,7 @@ const Header = () => {
     useEffect(() => {
         const updateSize = () => {
             if(window.innerWidth <= 1280) setSize(70)
-            else setSize(80)
+            else setSize(90)
         }
 
         window.addEventListener('resize', updateSize)
