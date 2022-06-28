@@ -1,5 +1,11 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import geomappingImg from '../images/geomapping.png'
+import appVeterinaria from '../images/listadoPacientes.png'
+
+//Import carousel
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 
 const ContainerWork = styled.div`
     display: flex;
@@ -17,7 +23,7 @@ const ContainerWork = styled.div`
 
 const Hero = styled.div`
     margin: 0 0 0 4rem;
-    width: 100%;
+    width: 40%;
 
     h2 {
         color: var(--orange);
@@ -29,6 +35,7 @@ const Hero = styled.div`
 
     @media(max-width: 1024px) {
         margin: 0;
+        width: 100%;
 
         h1 {
             font-size: 90px;
@@ -36,19 +43,69 @@ const Hero = styled.div`
     }
 `
 
-const Description = styled.div`
-    margin: 0 4rem;
+const ItemTitle = styled.div`
+    margin-top: auto;
+    width: auto;
+    backdrop-filter: blur(10px) grayscale(1);
+    padding: 0 2rem 2rem;
 
-    p {
-        font-size: 2rem;
-        line-height: 4rem;
-        text-align: justify;
+    h2 {
+        color: var(--orange);
+        letter-spacing: .2rem;
     }
 
-    @media(max-width: 1024px) {
-        margin: 1.5rem;
+    h1 {
+        font-size: 60px;
     }
 `
+
+const ItemOne = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-image: url(${geomappingImg});
+    background-size: cover;
+`
+
+const ItemTwo = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-image: url(${appVeterinaria});
+    background-size: cover;
+`
+
+const CarouselContainer = styled.div`
+    margin: 0 4rem;
+    width: 50%;
+
+    @media(max-width: 1024px) {
+        margin: 0;
+        width: 100%;
+    }
+`
+
+const responsive = {
+    0: { items: 1 },
+    568: { items: 1 },
+    1024: { items: 1 }
+}
+
+const items = [
+    <ItemOne>
+        <ItemTitle>
+            <h1>GeoMapping</h1>
+            <h2>A Social Network for Geologists</h2>
+        </ItemTitle>
+    </ItemOne>
+    ,
+    <ItemTwo>
+        <ItemTitle>
+            <h1>Veterinary App</h1>
+            <h2>A simple app to follow a vet patients</h2>
+        </ItemTitle>
+    </ItemTwo>
+]
 
 const Mywork = () => {
     return (
@@ -58,9 +115,16 @@ const Mywork = () => {
                 <h1>MY WORK?</h1>
             </Hero>
 
-            <Description>
-                <p>Passionate about new tech & computing. I started my adventure in the Tech world studying the FullStack Web Development Bootcamp in Ironhack, which allowed me to continue this travel with the BMIND company, working as an implementations specialist of Analytics Engineering & Digital Marketing, being part of different proyects with clients like Mahou San Miguel, OrangeBank, Cosentino, Santander Bank & Barceló Hotel Group. I search to apply my knowledge & passion to every project & phase of my life, with natural curiosity & sense of teamwork.</p>
-            </Description>
+            <CarouselContainer>
+                <AliceCarousel
+                    mouseTracking
+                    disableButtonsControls
+                    autoHeight
+                    autoWidth
+                    items={items}
+                    responsive={responsive}
+                />
+            </CarouselContainer>
         </ContainerWork>
     )
 }

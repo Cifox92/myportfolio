@@ -41,6 +41,18 @@ const Layout = props => {
                         display: flex;
                         flex-direction: column;
                     }
+                    
+                    .alice-carousel__dots-item.__active {
+                        background-color: var(--orange) !important;
+                    }
+
+                    .alice-carousel__dots-item {
+                        background-color: var(--grey) !important;
+                    }
+
+                    .alice-carousel__dots {
+                        transform: translateY(-90px);
+                    }
                 `}
             />
             <Header />
